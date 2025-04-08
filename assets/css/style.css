@@ -441,41 +441,6 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 50px;
-  display: block;
-  background: none;
-}
-
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #1c7d32;
-}
-
-/*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
 .interests .icon-box {
@@ -587,67 +552,6 @@ section .container {
   .testimonials {
     margin: 30px 10px;
   }
-}
-
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #1c7d32;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #9e7f25;
-  border: 2px solid #9e7f25;
 }
 
 /*--------------------------------------------------------------
@@ -885,6 +789,46 @@ section .container {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
+}
+
+/*--------------------------------------------------------------
+# Education
+--------------------------------------------------------------*/
+#education .icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%; /* ให้การ์ดมีความสูงเท่ากัน */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#education .icon-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#education .icon-box h5, 
+#education .icon-box h6, 
+#education .icon-box p {
+  margin: 5px 0;
+  color: #fff;
+}
+
+#education .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* ระยะห่างระหว่างการ์ด */
+}
+
+#education .col-md-4 {
+  flex: 1 1 calc(33.333% - 20px); /* การ์ดแต่ละใบมีขนาด 1/3 ของพื้นที่ */
+  max-width: calc(33.333% - 20px);
 }
 
 /*--------------------------------------------------------------
