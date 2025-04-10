@@ -823,11 +823,11 @@ section .container {
 #education .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* ระยะห่างระหว่างการ์ด */
+  gap: 20px;
 }
 
 #education .col-md-4 {
-  flex: 1 1 calc(33.333% - 20px); /* การ์ดแต่ละใบมีขนาด 1/3 ของพื้นที่ */
+  flex: 1 1 calc(33.333% - 20px);
   max-width: calc(33.333% - 20px);
 }
 
